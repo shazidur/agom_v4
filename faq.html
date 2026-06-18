@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="light" lang="bn">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>সাধারণ জিজ্ঞাসা (FAQ) - An-Noor Global Online Madrasah</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0A332E",
+                        "primary-container": "#E6ECEB",
+                        "secondary": "#D4AF37",
+                        "secondary-container": "#FFF5D1",
+                        "background": "#FAF9F5",
+                        "surface": "#FAF9F5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#F6F4ED",
+                        "surface-container": "#EFECE3",
+                        "surface-container-high": "#E7E3D8",
+                        "surface-container-highest": "#DFD9CB",
+                        "on-surface": "#0A332E",
+                        "on-surface-variant": "#415754",
+                        "outline": "#839A96",
+                        "outline-variant": "#CFDAD7",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#0A332E"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "Noto Serif Bengali", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "Noto Serif Bengali", "sans-serif"],
+                        "headline-md": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "headline-lg": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Playfair Display", "Noto Serif Bengali", "serif"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background font-body-md text-on-background overflow-x-hidden">
+
+<!-- TopNavBar -->
+<div id="header-placeholder"></div>
+
+<main class="pt-32">
+    <!-- Hero / Header Section -->
+    <section class="relative py-20 bg-primary text-white text-center overflow-hidden gold-gradient-bg">
+        <div class="max-w-container-max mx-auto px-4 relative z-10">
+            <h1 class="text-3xl md:text-[38px] font-headline-xl font-bold mb-4">সাধারণ জিজ্ঞাসা ও উত্তর (FAQ)</h1>
+            <p class="max-w-2xl mx-auto text-white/80 md:text-lg">
+                ভর্তি সংক্রান্ত, ক্লাস পরিচালনা, সিলেবাস বা অন্য যেকোনো তথ্য জানতে নিচের প্রশ্ন-উত্তরগুলো দেখুন।
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Search and Categories -->
+    <section class="py-12 max-w-4xl mx-auto px-4">
+        <!-- Category Tabs -->
+        <div class="flex flex-wrap gap-2 md:gap-3 justify-center mb-12">
+            <button class="category-tab px-4 py-2 md:px-6 md:py-2.5 rounded-full bg-primary text-white font-semibold text-sm md:text-base transition-all shadow-sm active" data-category="all">সব প্রশ্ন</button>
+            <button class="category-tab px-4 py-2 md:px-6 md:py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-semibold text-sm md:text-base hover:border-primary transition-all shadow-sm" data-category="general">সাধারণ</button>
+            <button class="category-tab px-4 py-2 md:px-6 md:py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-semibold text-sm md:text-base hover:border-primary transition-all shadow-sm" data-category="admission">ভর্তি ও ফি</button>
+            <button class="category-tab px-4 py-2 md:px-6 md:py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-semibold text-sm md:text-base hover:border-primary transition-all shadow-sm" data-category="class">ক্লাস ও সময়</button>
+            <button class="category-tab px-4 py-2 md:px-6 md:py-2.5 rounded-full bg-white border border-outline-variant text-on-surface-variant font-semibold text-sm md:text-base hover:border-primary transition-all shadow-sm" data-category="technical">কারিগরি</button>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="space-y-4">
+            
+            <!-- Question 1 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="general">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">১. আন-নূর গ্লোবাল অনলাইন মাদ্রাসা (AGOM) কী?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        An-Noor Global Online Madrasah (AGOM) একটি আন্তর্জাতিক মানের অনলাইন ইসলামিক শিক্ষা প্রতিষ্ঠান, যেখানে ঘরে বসেই সহীহ আকিদা, শুদ্ধ কুরআন তিলাওয়াত এবং দ্বীনের মৌলিক বিষয়সমূহ অভিজ্ঞ আলেম ও আলেমাগণের তত্ত্বাবধানে শেখা যায়।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="general">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">২. এটি কি কোনো নির্দিষ্ট ফিকহ অনুসরণ করে?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        হ্যাঁ, আমাদের মাদ্রাসার দ্বীনি সিলেবাস ও ফতোয়া মূলত হানাফি ফিকহ ও আহলুস সুন্নাহ ওয়াল জামাআতের মূলনীতির আলোকে পরিচালিত হয়।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="admission">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৩. আমি কিভাবে ভর্তি হতে পারি?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        ভর্তি হওয়ার জন্য আমাদের ওয়েবসাইটের <a href="admission.html" class="text-[#F59E0B] font-bold hover:underline">অনলাইন ভর্তি ফরম</a> পাতায় গিয়ে সঠিক তথ্য দিয়ে ফরমটি পূরণ করুন। আমাদের টীম ২৪ ঘণ্টার মধ্যে আপনার সাথে যোগাযোগ করবে ইনশাআল্লাহ।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="admission">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৪. কোর্স ফি কিভাবে পরিশোধ করব?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        বিকাশ, রকেট, নগদ বা যেকোনো অনলাইন ব্যাংকিং এর মাধ্যমে সহজেই ফি পরিশোধ করা যাবে। ফরম পূরণের পর পেমেন্ট করার বিস্তারিত বিবরণ আপনাকে এসএমএস বা হোয়াটসঅ্যাপে জানিয়ে দেওয়া হবে।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="class">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৫. ক্লাসগুলো কখন অনুষ্ঠিত হয়?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        আমাদের ক্লাস সাধারণত চাকরিজীবী ও শিক্ষার্থীদের সুবিধার্থে সকাল, বিকেল ও রাতে ব্যাচভিত্তিক পরিচালিত হয়। আপনি আপনার সুবিধাজনক সময়ের ব্যাচ নির্বাচন করতে পারবেন।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="general">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৬. বোনদের জন্য কি আলাদা ক্লাস ও শিক্ষিকার ব্যবস্থা আছে?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        অবশ্যই! আমাদের এখানে সম্পূর্ণ পর্দার বিধান মেনে মুসলিম বোনদের জন্য সম্পূর্ণ পৃথক ক্লাসের ব্যবস্থা রয়েছে এবং প্রতিটি ব্যাচ পরিচালনা করেন অত্যন্ত যোগ্যতাসম্পন্ন আলেমা শিক্ষিকাগণ।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="technical">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৭. ক্লাসে অংশগ্রহণের জন্য কী কী প্রয়োজন?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        একটি সচল স্মার্টফোন অথবা কম্পিউটার, ভালো ইন্টারনেট সংযোগ এবং জুম (Zoom) বা গুগল মিট (Google Meet) অ্যাপ ইন্সটল করা থাকতে হবে।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="class">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৮. কোনো ক্লাস মিস হয়ে গেলে কি রেকর্ডিং পাওয়া যাবে?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        হ্যাঁ, লাইভ ক্লাসে অনুপস্থিত থাকার যৌক্তিক কারণ থাকলে আমাদের স্টুডেন্ট পোর্টালের মাধ্যমে ক্লাস রেকর্ডিং দেখার সুযোগ দেওয়া হয়।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="admission">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">৯. প্রবাসী শিক্ষার্থীরা কি ভর্তি হতে পারবে?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        অবশ্যই! আমাদের অসংখ্য প্রবাসী শিক্ষার্থী বিশ্বের বিভিন্ন প্রান্ত (মিডল ইস্ট, ইউরোপ, আমেরিকা) থেকে সফলভাবে ক্লাস করছেন। তাদের স্থানীয় সময় ও ছুটির দিনের সাথে সমন্বয় করে ব্যাচ নির্ধারণ করা হয়।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="class">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">১০. একটি ক্লাসে কতজন শিক্ষার্থী থাকে?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        শিক্ষার মান বজায় রাখতে এবং ব্যক্তিগত তদারকি নিশ্চিত করতে প্রতিটি ব্যাচে সর্বোচ্চ ২০-২৫ জন শিক্ষার্থী রাখা হয়।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="general">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">১১. কোর্স শেষে কি কোনো সার্টিফিকেট দেওয়া হয়?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        হ্যাঁ, কোর্স সমাপ্তির পর সফলভাবে উত্তীর্ণ সকল শিক্ষার্থীদের মাদ্রাসা থেকে ডিজিটাল বা প্রিন্টেড সার্টিফিকেট প্রদান করা হয়।
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="accordion-item bg-white border border-outline-variant rounded-xl overflow-hidden glass-card transition-all" data-category="general">
+                <button class="accordion-header w-full px-6 py-5 flex justify-between items-center text-left focus:outline-none">
+                    <span class="font-bold text-lg text-primary">১২. প্রবীণ বা বয়স্কদের জন্য কি বিশেষ ব্যাচ আছে?</span>
+                    <span class="material-symbols-outlined accordion-icon text-primary">expand_more</span>
+                </button>
+                <div class="accordion-content px-6">
+                    <p class="text-on-surface-variant leading-relaxed">
+                        হ্যাঁ, দ্বীনি ইলম শেখার কোনো বয়সসীমা নেই। বয়স্ক ভাইদের সহজ সাবলীল পদ্ধতিতে ও সহনশীলভাবে কুরআন শেখানোর জন্য আলাদা বিশেষ ব্যাচ রয়েছে।
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+<!-- Unified Footer -->
+<!-- Unified Footer -->
+<div id="footer-placeholder"></div>
+
+<script>
+    // Accordion Logic
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const item = header.closest('.accordion-item');
+            const content = item.querySelector('.accordion-content');
+            const isActive = item.classList.contains('active');
+            
+            // Close other items
+            document.querySelectorAll('.accordion-item').forEach(otherItem => {
+                otherItem.classList.remove('active');
+                otherItem.querySelector('.accordion-content').style.maxHeight = null;
+            });
+
+            if (!isActive) {
+                item.classList.add('active');
+                content.style.maxHeight = content.scrollHeight + 'px';
+            }
+        });
+    });
+
+    // Category Filter Logic
+    const categoryTabs = document.querySelectorAll('.category-tab');
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    categoryTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            categoryTabs.forEach(t => {
+                t.classList.remove('bg-primary', 'text-white', 'active');
+                t.classList.add('bg-white', 'border', 'border-outline-variant', 'text-on-surface-variant');
+            });
+
+            // Add active class to clicked tab
+            tab.classList.add('bg-primary', 'text-white', 'active');
+            tab.classList.remove('bg-white', 'border', 'border-outline-variant', 'text-on-surface-variant');
+
+            const selectedCategory = tab.getAttribute('data-category');
+
+            accordionItems.forEach(item => {
+                const itemCategory = item.getAttribute('data-category');
+                if (selectedCategory === 'all' || itemCategory === selectedCategory) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+<script src="main.js?v=3.0"></script>
+</body>
+</html>

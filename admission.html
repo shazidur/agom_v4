@@ -1,0 +1,241 @@
+<!-- Admission - Standardized Uniform Design -->
+<!DOCTYPE html><html class="light" lang="bn"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>ভর্তি ফরম - An-Noor Global Online Madrasah (AGOM)</title>
+<meta name="description" content="আন-নূর গ্লোবাল অনলাইন মাদরাসা (AGOM)-এর অনলাইন ভর্তি ফরম। আপনার কাঙ্ক্ষিত দ্বীনি ও কুরআন শিক্ষা কোর্সে ভর্তি হতে ফরমটি পূরণ করুন।">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0A332E",
+                        "primary-container": "#E6ECEB",
+                        "secondary": "#D4AF37",
+                        "secondary-container": "#FFF5D1",
+                        "background": "#FAF9F5",
+                        "surface": "#FAF9F5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#F6F4ED",
+                        "surface-container": "#EFECE3",
+                        "surface-container-high": "#E7E3D8",
+                        "surface-container-highest": "#DFD9CB",
+                        "on-surface": "#0A332E",
+                        "on-surface-variant": "#415754",
+                        "outline": "#839A96",
+                        "outline-variant": "#CFDAD7",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#0A332E"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "Noto Serif Bengali", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "Noto Serif Bengali", "sans-serif"],
+                        "headline-md": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "headline-lg": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Playfair Display", "Noto Serif Bengali", "serif"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .geometric-pattern {
+            background-color: transparent;
+            background-image: radial-gradient(#0A332E 0.5px, transparent 0.5px), radial-gradient(#0A332E 0.5px, #fbf9f8 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            opacity: 0.04;
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+        }
+        .form-card-shadow {
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.03);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<div id="header-placeholder"></div>
+<main class="pt-32 pb-20 relative">
+<div class="geometric-pattern"></div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<!-- Header Section -->
+<div class="text-center mb-12">
+<h1 class="text-3xl md:text-[38px] font-headline-xl text-primary mb-4">অনলাইন ভর্তি ফরম</h1>
+<p class="text-body-md md:text-body-lg font-body-lg text-on-surface-variant max-w-2xl mx-auto">
+                    দ্বীনি ইলম অন্বেষণে মাদরাসা আদাব-এ আপনার যাত্রা শুরু হোক। নিচের ফরমটি নির্ভুলভাবে পূরণ করে আবেদন করুন।
+                </p>
+</div>
+<!-- Bento Grid Layout for Form & Instructions -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- Main Form Section -->
+<div class="lg:col-span-8 bg-surface-container-lowest border border-outline-variant rounded-xl p-6 md:p-10 lg:p-12 form-card-shadow shadow-lg">
+<form class="space-y-8" id="admissionForm">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Student Name -->
+<div class="flex flex-col gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant" for="studentName">ছাত্রের নাম (Student Name)</label>
+<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="studentName" name="studentName" placeholder="পুরো নাম লিখুন" required="" type="text">
+</div>
+<!-- Father's Name -->
+<div class="flex flex-col gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant" for="fatherName">পিতার নাম (Father's Name)</label>
+<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="fatherName" name="fatherName" placeholder="পিতার নাম লিখুন" required="" type="text">
+</div>
+<!-- Age -->
+<div class="flex flex-col gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant" for="age">বয়স (Age)</label>
+<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="age" name="age" placeholder="বয়স" required="" type="number">
+</div>
+<!-- Contact Number -->
+<div class="flex flex-col gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant" for="phone">মোবাইল নাম্বার (Contact Number)</label>
+<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="phone" name="phone" placeholder="০১৭XXXXXXXX" required="" type="tel">
+</div>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant" for="email">ইমেইল (Email)</label>
+<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md w-full ring-1 ring-outline/20" id="email" name="email" placeholder="example@mail.com" type="email">
+</div>
+<!-- Course Selection -->
+<div class="flex flex-col gap-2">
+<label class="text-label-md font-label-md text-on-surface-variant">কোর্স নির্বাচন করুন (Course Selection)</label>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" required="" type="radio" value="Muslim Culture & Life Program">
+<span class="text-body-md">Muslim Culture &amp; Life Program</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="সহজ কুরআন শিক্ষা কোর্স (প্রাপ্তবয়স্ক পুরুষ)">
+<span class="text-body-md">সহজ কুরআন শিক্ষা কোর্স (প্রাপ্তবয়স্ক পুরুষ)</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="মহিলাদের কুরআন শিক্ষা কোর্স">
+<span class="text-body-md">মহিলাদের কুরআন শিক্ষা কোর্স</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="বাচ্চাদের কুরআন শিক্ষা কোর্স">
+<span class="text-body-md">বাচ্চাদের কুরআন শিক্ষা কোর্স</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="রমজানে ২৫ ঘণ্টায় কুরআন শিক্ষা">
+<span class="text-body-md">রমজানে ২৫ ঘণ্টায় কুরআন শিক্ষা</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="ব্যস্ত, কর্মজীবী ও জেনারেল শিক্ষার্থীদের বিশেষ প্রোগ্রাম">
+<span class="text-body-md">ব্যস্ত, কর্মজীবী ও জেনারেল শিক্ষার্থীদের বিশেষ প্রোগ্রাম</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="নাহু-সরফের বিশেষ কোর্স">
+<span class="text-body-md">নাহু-সরফের বিশেষ কোর্স</span>
+</label>
+<label class="flex items-center gap-3 p-4 border border-outline rounded-lg cursor-pointer hover:bg-surface-container transition-colors ring-1 ring-outline/20">
+<input class="w-4 h-4 text-primary border-outline focus:ring-primary" name="course" type="radio" value="Arabic All Skills Course">
+<span class="text-body-md">Arabic All Skills Course</span>
+</label>
+</div>
+</div>
+<!-- Submit Button -->
+<div class="pt-4">
+<button class="w-full md:w-auto px-12 py-4 bg-secondary-container text-on-secondary-container rounded-lg font-headline-md hover:shadow-lg transition-all flex items-center justify-center gap-3" type="submit">
+<span class="">ফরম জমা দিন</span>
+<span class="material-symbols-outlined" data-icon="send">send</span>
+</button>
+<p class="form-status mt-4" id="admissionStatus" role="status"></p>
+</div>
+</form>
+</div>
+<!-- Sidebar / Instructions -->
+<aside class="lg:col-span-4 space-y-gutter">
+<div class="bg-primary text-on-primary p-8 rounded-xl relative overflow-hidden shadow-lg">
+<div class="relative z-10">
+<h3 class="text-headline-md font-headline-md mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+                                ভর্তির নিয়মাবলী
+                            </h3>
+<ul class="space-y-4 text-body-md font-body-md">
+<li class="flex gap-3">
+<span class="font-bold">০১.</span>
+                                    আবেদনকারীকে অবশ্যই নূন্যতম ধর্মীয় শিষ্টাচার মেনে চলতে হবে।
+                                </li>
+<li class="flex gap-3">
+<span class="font-bold">০২.</span>
+                                    সঠিক তথ্য প্রদান করতে হবে, অন্যথায় আবেদন বাতিল হতে পারে।
+                                </li>
+<li class="flex gap-3">
+<span class="font-bold">০৩.</span>
+                                    ভর্তি ফি ফরম জমা দেওয়ার পরবর্তী ২৪ ঘণ্টার মধ্যে পরিশোধ করতে হবে।
+                                </li>
+<li class="flex gap-3">
+<span class="font-bold">০৪.</span>
+                                    অনলাইনে ক্লাসের জন্য প্রয়োজনীয় প্রযুক্তিগত প্রস্তুতি থাকতে হবে।
+                                </li>
+</ul>
+</div>
+<div class="absolute -right-8 -bottom-8 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="mosque">mosque</span>
+</div>
+</div>
+<!-- Image/Illustration Card -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden border border-outline-variant shadow-md">
+<img class="w-full h-48 object-cover" data-alt="A serene and professional photograph of an open Holy Quran resting on a carved wooden book stand inside a bright, modern library with Islamic geometric architectural details. The lighting is soft and golden, creating a focused and respectful academic atmosphere that aligns with a high-end Islamic educational brand. The color palette features deep greens, cream whites, and natural wood tones, emphasizing Digital Adab and intellectual growth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVocz3A-FHWtj6idP3yKorJlbHvO8ofvTxYqj49Q4G6Ido6aykOeZO7Ld554KVpB6GvN0YRQUNvEhnAmPLkh5xIOuiJHh_Qewz8ARmBO_VePcKnI4SlO3E3mLgQjKWLTBAJEmrbxsmR7zIXgMiLT9kPc3_Qlw1eX-LgyrfjJATxlNkKowEgqEYO0rmjMzfUkrshGACh4ApNbllOv_4Ez9pfYcLdfFGUftgggvm00yKr9zmGA9YKhRbx5SA1y4G0MKojwkMOQ9zc6Y">
+<div class="p-6">
+<h4 class="text-label-md font-label-md text-primary mb-2">সহায়তা প্রয়োজন?</h4>
+<p class="text-label-sm font-label-sm text-on-surface-variant">আমাদের সাপোর্ট টিমের সাথে সরাসরি যোগাযোগ করুন।</p>
+<div class="flex flex-col gap-2 mt-4 text-primary font-bold text-sm">
+    <a class="flex items-center gap-2 hover:underline transition-all" href="tel:+8801786340523">
+        <span class="material-symbols-outlined text-base" data-icon="call">call</span>
+        +8801786340523
+    </a>
+    <a class="flex items-center gap-2 hover:underline transition-all" href="tel:+8801815298479">
+        <span class="material-symbols-outlined text-base" data-icon="call">call</span>
+        +8801815298479
+    </a>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<!-- Unified Footer -->
+<div id="footer-placeholder"></div>
+<script src="form-config.js"></script>
+<script src="main.js?v=3.0"></script>
+</body></html>
+

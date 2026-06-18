@@ -1,0 +1,757 @@
+<!-- Home - Standardized Uniform Design -->
+<!DOCTYPE html><html class="light" lang="bn" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>An-Noor Global Online Madrasah (AGOM) - অনলাইন ইসলামিক শিক্ষার নির্ভরযোগ্য প্রতিষ্ঠান</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Serif:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#0A332E",
+                        "primary-container": "#E6ECEB",
+                        "secondary": "#D4AF37",
+                        "secondary-container": "#FFF5D1",
+                        "background": "#FAF9F5",
+                        "surface": "#FAF9F5",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-low": "#F6F4ED",
+                        "surface-container": "#EFECE3",
+                        "surface-container-high": "#E7E3D8",
+                        "surface-container-highest": "#DFD9CB",
+                        "on-surface": "#0A332E",
+                        "on-surface-variant": "#415754",
+                        "outline": "#839A96",
+                        "outline-variant": "#CFDAD7",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#0A332E"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "margin-desktop": "40px",
+                        "container-max": "1200px",
+                        "margin-mobile": "16px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "headline-xl": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "body-md": ["Plus Jakarta Sans", "Noto Serif Bengali", "sans-serif"],
+                        "body-lg": ["Plus Jakarta Sans", "Noto Serif Bengali", "sans-serif"],
+                        "headline-md": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "headline-lg": ["Playfair Display", "Noto Serif Bengali", "serif"],
+                        "label-sm": ["Plus Jakarta Sans", "sans-serif"],
+                        "label-md": ["Plus Jakarta Sans", "sans-serif"],
+                        "headline-lg-mobile": ["Playfair Display", "Noto Serif Bengali", "serif"]
+                    },
+                    "fontSize": {
+                        "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                        "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .islamic-pattern {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0, 73, 0, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+        .hero-mask {
+            mask-image: linear-gradient(to right, black 60%, transparent 100%);
+        }
+        /* Page width standardization */
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body class="bg-background font-body-md text-on-background selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<div id="header-placeholder"></div>
+<main class="pt-32">
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden bg-surface py-12">
+<div class="absolute inset-0 islamic-pattern pointer-events-none opacity-50"></div>
+<!-- Spinning Mandala Outline SVG -->
+<svg class="spin-mandala absolute right-[-100px] top-1/2 -translate-y-1/2 w-[700px] h-[700px] opacity-[0.03] pointer-events-none text-primary hidden lg:block" viewBox="0 0 200 200" fill="none" stroke="currentColor" stroke-width="0.75">
+  <circle cx="100" cy="100" r="90" />
+  <circle cx="100" cy="100" r="75" />
+  <circle cx="100" cy="100" r="60" />
+  <circle cx="100" cy="100" r="45" />
+  <g transform="rotate(0, 100, 100)"><rect x="45" y="45" width="110" height="110" /></g>
+  <g transform="rotate(15, 100, 100)"><rect x="45" y="45" width="110" height="110" /></g>
+  <g transform="rotate(30, 100, 100)"><rect x="45" y="45" width="110" height="110" /></g>
+  <g transform="rotate(45, 100, 100)"><rect x="45" y="45" width="110" height="110" /></g>
+  <g transform="rotate(60, 100, 100)"><rect x="45" y="45" width="110" height="110" /></g>
+  <g transform="rotate(75, 100, 100)"><rect x="45" y="45" width="110" height="110" /></g>
+  <g transform="rotate(0, 100, 100)">
+    <path d="M 100 10 C 105 50, 95 50, 100 90 C 105 130, 95 130, 100 190" />
+    <path d="M 10 100 C 50 105, 50 95, 90 100 C 130 105, 130 95, 190 100" />
+  </g>
+  <g transform="rotate(45, 100, 100)">
+    <path d="M 100 10 C 105 50, 95 50, 100 90 C 105 130, 95 130, 100 190" />
+    <path d="M 10 100 C 50 105, 50 95, 90 100 C 130 105, 130 95, 190 100" />
+  </g>
+  <circle cx="100" cy="100" r="15" />
+</svg>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 text-primary font-bold text-sm">
+<span class="material-symbols-outlined text-sm">public</span>
+                    An-Noor Global Online Madrasah
+                </div>
+<h1 class="font-headline-xl text-xl sm:text-2xl md:text-3xl lg:text-[42px] lg:leading-[52px] text-primary leading-tight">
+                    <span class="block">বিশ্বব্যাপী কুরআন ও দ্বীনি শিক্ষার</span>
+                    <span class="block">বিশ্বস্ত অনলাইন মাদ্রাসা</span>
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    বিশ্ববরেণ্য উলামা-মাশায়েখদের তত্ত্বাবধানে পরিচালিত শিশু ও প্রাপ্তবয়স্কদের জন্য কায়দা, আমপারা, নাজেরা, হিফজ এবং বেসিক থেকে অ্যাডভান্সড লেভেল পর্যন্ত ইসলামী শিক্ষার একটি নির্ভরযোগ্য আন্তর্জাতিক অনলাইন শিক্ষা প্ল্যাটফর্ম।
+                </p>
+<div class="flex flex-col sm:flex-row gap-4 items-stretch sm:items-center">
+<a href="admission.html" class="bg-primary text-white hover:bg-[#154d46] px-8 py-4 rounded-full font-label-md text-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 active:scale-95 border border-primary/20">
+                        ভর্তি হোন 
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a href="courses.html" class="border-2 border-primary text-primary px-8 py-4 rounded-full font-label-md text-lg hover:bg-primary/5 transition-all flex items-center justify-center active:scale-95">
+                        কোর্সসমূহ দেখুন
+                    </a>
+</div>
+</div>
+<div class="hidden lg:block relative">
+<div class="fluid-card p-2">
+<img alt="AGOM Student Learning" class="w-full h-auto object-cover rounded-[20px]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlrlynDNZ1pVp8Kxvug5qAU8K2nKV7PHSrygWzpfQNwNbCWS0vRHpyaW1OW8_UsAZeB4fkg4CBtb9RRZKHnOmUEhL1cDodWMuUAKH7RnEiIDXouO5yxqRfyL9bvvm0Nw1bIEYK1Am_Gr3VKbg8oRuuZaBngJqKb9VM3AIXRm7DUa3yw-DBOScquOLuIhidCad81_w4jPoN-_sywr-1pTQj29Oy3mow6fC8ljfl4MM9PLiQzFpuU749bPWX3Hsia7rarYQFfPU9kHw">
+</div>
+<div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-[20px] shadow-xl flex items-center gap-4 border border-outline-variant">
+<div class="bg-primary/10 p-3 rounded-full text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+</div>
+<div>
+<p class="font-bold text-primary text-sm">বিশ্বস্ত অনলাইন মাধ্যম</p>
+<p class="text-xs text-on-surface-variant">সারা বিশ্বের মুসলিমদের জন্য</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- About AGOM -->
+<section class="py-24 bg-surface-container-lowest" id="about">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+        
+        <!-- Left Column: Introduction & Principles -->
+        <div class="lg:col-span-7 space-y-8">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary-container/30 bg-secondary-container/10 text-secondary text-xs font-bold uppercase tracking-wider">
+                <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1">info</span>
+                AGOM পরিচিতি
+            </div>
+            
+            <h2 class="font-headline-lg text-3xl md:text-4xl text-primary font-bold leading-tight font-serif">
+                প্রতিষ্ঠানের পরিচিতি ও মূলনীতি
+            </h2>
+            
+            <div class="space-y-4 text-on-surface-variant leading-relaxed text-base">
+                <p>
+                    আন-নূর গ্লোবাল অনলাইন মাদরাসা (AGOM) একটি আন্তর্জাতিক অনলাইন ইসলামী শিক্ষা প্ল্যাটফর্ম, যেখানে সব বয়স ও পেশার মুসলিম নর-নারী অভিজ্ঞ ও দক্ষ শিক্ষক-শিক্ষিকাদের তত্ত্বাবধানে ঘরে বসেই বিশুদ্ধ, মানসম্মত ও সহীহ দ্বীনি শিক্ষা অর্জন করতে পারবেন।
+                </p>
+                <p>
+                    সরাসরি উস্তাদের সান্নিধ্যে শিক্ষা গ্রহণই দ্বীনি শিক্ষার মূল ধারা; তবে সময়, দূরত্ব ও বাস্তব জীবনের সীমাবদ্ধতার কারণে যাদের পক্ষে তা সম্ভব নয়, তাদের জন্য এই বাস্তব চাহিদা পূরণের লক্ষ্যে, বিশ্বখ্যাত দারুল উলুম দেওবন্দ (ভারত)-এর অন্যতম মুফতি ও উস্তাযুল হাদীস ইউসুফ তাওলবী দা.বা. সহ বাংলাদেশের শীর্ষস্থানীয় উলামায়ে কেরামের পরামর্শ, দোয়া ও ইজাজতক্রমে আন-নূর গ্লোবাল অনলাইন মাদরাসা (AGOM) প্রতিষ্ঠিত হয়েছে। ২০২৬ সালের জানুয়ারি মাস থেকে এর প্রাতিষ্ঠানিক কার্যক্রম আনুষ্ঠানিকভাবে শুরু হয়।
+                </p>
+            </div>
+            
+            <!-- Principles -->
+            <div class="pt-8 border-t border-outline-variant/40">
+                <h3 class="font-headline-md text-xl text-primary font-semibold mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1">verified_user</span>
+                    আমাদের মূলনীতিসমূহ
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Principle 1 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1">favorite</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary text-sm mb-1">নিখাদ ইখলাস</h4>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">সকল কার্যক্রমে আল্লাহর সন্তুষ্টি ও নিখাদ ইখলাস বজায় রাখা।</p>
+                        </div>
+                    </div>
+                    <!-- Principle 2 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1">menu_book</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary text-sm mb-1">শরীয়তের মৌলিক রূপ</h4>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">শিক্ষাদান ও পরিচালনায় শরীয়তের মৌলিক রূপ এবং হানাফি ফিকহ অনুসরণ।</p>
+                        </div>
+                    </div>
+                    <!-- Principle 3 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1">school</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary text-sm mb-1">মানসম্মত শিক্ষা</h4>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">অভিজ্ঞ আলেমদের তত্ত্বাবধানে পাঠ্যক্রম ও শিক্ষার মান নিশ্চিত করা।</p>
+                        </div>
+                    </div>
+                    <!-- Principle 4 -->
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-10 h-10 rounded-xl bg-primary-container flex items-center justify-center text-primary">
+                            <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1">security</span>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-primary text-sm mb-1">সুরক্ষিত পরিবেশ</h4>
+                            <p class="text-xs text-on-surface-variant leading-relaxed">নারী ও পুরুষ শিক্ষার্থীর জন্য পৃথক, সম্মানজনক ও সুরক্ষিত পাঠপরিবেশ।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Right Column: Governing Body (পরিচালনা পরিষদ) -->
+        <div class="lg:col-span-5 space-y-6">
+            <div class="border-l-4 border-secondary pl-4 py-1">
+                <h3 class="font-headline-md text-2xl text-primary font-bold font-serif">
+                    পরিচালনা পরিষদ
+                </h3>
+                <p class="text-xs text-on-surface-variant">AGOM পরিচালনা ও শিক্ষাদানের দায়িত্বে নিয়োজিত উস্তাদবৃন্দ</p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Chairman Card -->
+                <div class="sm:col-span-2 fluid-card p-5 sm:p-6 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 hover:border-secondary/30 transition-all duration-300">
+                    <img class="w-20 h-20 rounded-full object-cover border-2 border-secondary/20 shadow-md flex-shrink-0" src="image/উপদেষ্টা পরিষদ/হাবিবুর রহমান কাসেমী চেয়ারম্যান.jpg" alt="মুফতী হাবীবুর রহমান কাসেমী">
+                    <div class="flex flex-col items-center sm:items-start">
+                        <span class="inline-block px-2.5 py-0.5 bg-secondary/10 text-secondary rounded-full text-[10px] font-bold mb-1">প্রতিষ্ঠাতা রঈস (চেয়ারম্যান)</span>
+                        <h4 class="font-bold text-primary text-base">মুফতী হাবীবুর রহমান কাসেমী দা.বা.</h4>
+                        <p class="text-xs text-on-surface-variant mt-1 leading-relaxed text-center sm:text-left">শিক্ষা সচিব, জামিয়াতুন নূর আল কাসেমিয়া, উত্তরা, ঢাকা।</p>
+                    </div>
+                </div>
+                
+                <!-- Principal Card -->
+                <div class="fluid-card p-5 flex flex-col items-center text-center hover:border-secondary/30 transition-all duration-300">
+                    <img class="w-16 h-16 rounded-full object-cover mb-3 border-2 border-primary/10 shadow-sm" src="image/উপদেষ্টা পরিষদ/ইমদাদুল্লাহ প্রিন্সিপাল.jpg" alt="মুফতী মুহাম্মদ ইমদাদুল্লাহ">
+                    <span class="inline-block px-2 py-0.5 bg-primary/10 text-primary rounded-full text-[9px] font-bold mb-2">প্রতিষ্ঠাতা মুহতামিম (প্রিন্সিপাল)</span>
+                    <h4 class="font-bold text-primary text-sm">মুফতী মুহাম্মদ ইমদাদুল্লাহ</h4>
+                    <p class="text-[10px] text-on-surface-variant mt-1 leading-tight">নায়েবে মুহতামিম, মারকাযুদ দিরাসাহ আল ইসলামিয়া, মিরপুর।</p>
+                </div>
+                
+                <!-- Education Secretary Card -->
+                <div class="fluid-card p-5 flex flex-col items-center text-center hover:border-secondary/30 transition-all duration-300">
+                    <img class="w-16 h-16 rounded-full object-cover mb-3 border-2 border-primary/10 shadow-sm" src="image/উপদেষ্টা পরিষদ/আজহারুল ইসলাম শিক্ষা সচিব.jpg" alt="মুফতী আজহারুল ইসলাম">
+                    <span class="inline-block px-2 py-0.5 bg-primary/10 text-primary rounded-full text-[9px] font-bold mb-2">নাযিমে তা'লীমাত (শিক্ষা সচিব)</span>
+                    <h4 class="font-bold text-primary text-sm">মুফতী আজহারুল ইসলাম</h4>
+                    <p class="text-[10px] text-on-surface-variant mt-1 leading-tight">সিনিয়র মুদাররিস, জামিয়াতুন নূর আল কাসেমিয়া, উত্তরা।</p>
+                </div>
+                
+                <!-- Female Dept Head Card -->
+                <div class="sm:col-span-2 fluid-card p-5 flex flex-col sm:flex-row items-center sm:items-start text-center sm:text-left gap-4 hover:border-secondary/30 transition-all duration-300">
+                    <div class="w-14 h-14 rounded-full bg-primary/5 border border-primary/15 flex items-center justify-center text-primary shadow-inner flex-shrink-0">
+                        <span class="material-symbols-outlined text-2xl">person</span>
+                    </div>
+                    <div class="flex flex-col items-center sm:items-start">
+                        <span class="inline-block px-2 py-0.5 bg-secondary/10 text-secondary rounded-full text-[9px] font-bold mb-1">মহিলা বিভাগীয় প্রধান</span>
+                        <h4 class="font-bold text-primary text-sm">উস্তাযা উম্মে হুযাইফা</h4>
+                        <p class="text-[10px] text-on-surface-variant mt-0.5 text-center sm:text-left">প্রধান পরিচালিকা, AGOM মহিলা বিভাগ।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="py-20 bg-surface">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="bg-white rounded-3xl border border-outline-variant p-6 md:p-16 shadow-sm glass-card reveal">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-primary">
+<span class="text-on-surface">এক নজরে</span>&nbsp;<span class="text-secondary">AGOM</span>
+</h2>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
+<!-- Stats Items Verbatim -->
+<div class="flex flex-col items-center text-center">
+<div class="mb-4 p-4 rounded-full bg-primary/5 text-primary">
+<span class="material-symbols-outlined text-4xl">record_voice_over</span>
+</div>
+<div class="font-headline-lg text-3xl text-primary mb-1"><span class="stat-counter" data-target="8">0</span>+</div>
+<div class="text-on-surface-variant text-sm font-medium">শিক্ষক / শিক্ষিকা</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="mb-4 p-4 rounded-full bg-primary/5 text-primary">
+<span class="material-symbols-outlined text-4xl">groups</span>
+</div>
+<div class="font-headline-lg text-3xl text-primary mb-1"><span class="stat-counter" data-target="150">0</span>+</div>
+<div class="text-on-surface-variant text-sm font-medium">শিক্ষার্থী</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="mb-4 p-4 rounded-full bg-primary/5 text-primary">
+<span class="material-symbols-outlined text-4xl">star_rate</span>
+</div>
+<div class="font-headline-lg text-3xl text-primary mb-1"><span class="stat-counter" data-target="95">0</span>%</div>
+<div class="text-on-surface-variant text-sm font-medium">সফলতার হার</div>
+</div>
+<div class="flex flex-col items-center text-center">
+<div class="mb-4 p-4 rounded-full bg-primary/5 text-primary">
+<span class="material-symbols-outlined text-4xl">co_present</span>
+</div>
+<div class="font-headline-lg text-3xl text-primary mb-1"><span class="stat-counter" data-target="10">0</span>+</div>
+<div class="text-on-surface-variant text-sm font-medium">চলমান কার্যক্রম</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Section -->
+<section class="py-24 bg-surface-container-low islamic-pattern">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-2 gap-4 relative">
+                <div class="rounded-2xl overflow-hidden border-4 border-white shadow-xl aspect-[4/5] relative group">
+                    <img alt="দারুল উলূম দেওবন্দ লাইব্রেরি" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="image/deoband_library.png">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-xs py-2 px-1 text-center font-bold">দারুল উলূম দেওবন্দ লাইব্রেরি</div>
+                </div>
+                <div class="rounded-2xl overflow-hidden border-4 border-white shadow-xl aspect-[4/5] relative group">
+                    <img alt="মদিনা মুনাওয়ারার লাইব্রেরি" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="image/madinah_library.png">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white text-xs py-2 px-1 text-center font-bold">মদিনা মুনাওয়ারার লাইব্রেরি</div>
+                </div>
+                <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-primary px-6 py-3.5 rounded-xl shadow-xl max-w-[90%] hidden md:block text-center z-10 w-[80%]">
+                    <p class="text-white font-headline-md italic text-xs md:text-sm leading-relaxed">"ইলম অর্জনের মাধ্যমেই মানুষের অন্তর আলোকিত হয়।"</p>
+                </div>
+            </div>
+            <div class="space-y-8">
+                <div class="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full font-label-md text-sm">আমাদের মিশন</div>
+                <h2 class="font-headline-lg text-headline-lg text-primary">আমাদের লক্ষ্য ও উদ্দেশ্য</h2>
+                <p class="text-body-lg text-on-surface-variant leading-relaxed text-justify">
+                    আল্লাহ তাআলার সন্তুষ্টি অর্জনের লক্ষ্যে আধুনিক প্রযুক্তির মাধ্যমে বিশুদ্ধ কুরআন ও দ্বীনি শিক্ষাকে সহজ, মানসম্মত ও বিশ্বব্যাপী সবার কাছে পৌঁছে দেওয়াই আমাদের লক্ষ্য। কুরআন-সুন্নাহর আলোকে জ্ঞান, আমল ও উত্তম চরিত্রে সমৃদ্ধ আদর্শ প্রজন্ম গড়ে তোলাই আমাদের উদ্দেশ্য।
+                </p>
+                
+                <div class="space-y-4 pt-4">
+                    <h3 class="font-headline-md text-xl text-primary font-bold">প্রত্যাশিত ফলাফল (Expected Outcomes)</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-outline-variant shadow-sm animate-fade-in">
+                            <span class="material-symbols-outlined text-secondary">check_circle</span>
+                            <p class="text-on-surface text-sm">বিশ্বের যেকোনো স্থান থেকে সহজে নির্ভরযোগ্য দ্বীনি শিক্ষা অর্জন করা।</p>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-outline-variant shadow-sm animate-fade-in">
+                            <span class="material-symbols-outlined text-secondary">check_circle</span>
+                            <p class="text-on-surface text-sm">আকীদা, আমল ও চরিত্রে ইতিবাচক পরিবর্তন আনা।</p>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-outline-variant shadow-sm animate-fade-in">
+                            <span class="material-symbols-outlined text-secondary">check_circle</span>
+                            <p class="text-on-surface text-sm">কর্মজীবী, প্রবাসী ও গৃহিণীদের জন্য স্থায়ী ও গ্রহণযোগ্য প্ল্যাটফর্ম।</p>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-white rounded-xl border border-outline-variant shadow-sm animate-fade-in">
+                            <span class="material-symbols-outlined text-secondary">check_circle</span>
+                            <p class="text-on-surface text-sm">সুসংগঠিত, মানসম্মত এবং বিশ্বস্ত অনলাইন মাদরাসা প্রতিষ্ঠা।</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-24 bg-surface-bright" id="features">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-16">
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-4">AGOM-এর বিশেষ সুবিধাসমূহ</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">আমাদের বিশেষ সুবিধাসমূহ যা শিক্ষার্থীদের পড়াশোনাকে করে তোলে সহজ, সাবলীল ও ফলপ্রসূ।</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-primary/5 p-5 md:p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md hover:scale-105 transition-all text-center flex flex-col items-center">
+                <div class="mb-5 p-4 rounded-full bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-4xl">live_tv</span>
+                </div>
+                <h3 class="font-headline-md text-primary text-xl mb-3">লাইভ ক্লাস ও রেকর্ডিং</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">উস্তাদের সরাসরি তত্ত্বাবধানে লাইভ ক্লাস এবং পরবর্তীতে রিভিশনের জন্য ক্লাসের রেকর্ডিং সুবিধা।</p>
+            </div>
+            <div class="bg-secondary/5 p-5 md:p-8 rounded-2xl border border-secondary/10 shadow-sm hover:shadow-md hover:scale-105 transition-all text-center flex flex-col items-center">
+                <div class="mb-5 p-4 rounded-full bg-secondary/10 text-secondary">
+                    <span class="material-symbols-outlined text-4xl">edit_document</span>
+                </div>
+                <h3 class="font-headline-md text-secondary text-xl mb-3">হোমওয়ার্ক ও মূল্যায়ন</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">Educators / শিক্ষার্থীদের নিয়মিত পড়াশোনার অগ্রগতি মূল্যায়নের জন্য হোমওয়ার্ক ও নিয়মিত পরীক্ষা ব্যবস্থা।</p>
+            </div>
+            <div class="bg-tertiary/5 p-5 md:p-8 rounded-2xl border border-tertiary/10 shadow-sm hover:shadow-md hover:scale-105 transition-all text-center flex flex-col items-center">
+                <div class="mb-5 p-4 rounded-full bg-tertiary/10 text-tertiary">
+                    <span class="material-symbols-outlined text-4xl">workspace_premium</span>
+                </div>
+                <h3 class="font-headline-md text-tertiary text-xl mb-3">কোর্স শেষে সনদ</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">সফলভাবে কোর্স সমাপ্তকারী শিক্ষার্থীদের জন্য মাদ্রাসার পক্ষ থেকে প্রশংসাপত্র ও মানসম্মত সনদ প্রদান।</p>
+            </div>
+            <div class="bg-primary/5 p-5 md:p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md hover:scale-105 transition-all text-center flex flex-col items-center">
+                <div class="mb-5 p-4 rounded-full bg-primary/10 text-primary">
+                    <span class="material-symbols-outlined text-4xl">child_care</span>
+                </div>
+                <h3 class="font-headline-md text-primary text-xl mb-3">শিশুদের সহজ কুরআন শিক্ষা</h3>
+                <p class="text-on-surface-variant text-sm leading-relaxed">কোমলমতি শিশুদের জন্য মনোরম পরিবেশে আকর্ষণীয় পদ্ধতিতে কুরআন তিলাওয়াত শিক্ষা ও তারবিয়াহ।</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Syllabus Explorer Section -->
+<section class="py-24 bg-surface-container-low islamic-pattern" id="syllabus-explorer">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+    <div class="text-center mb-16">
+      <div class="inline-block px-4 py-1 bg-primary/10 text-primary rounded-full font-label-md text-sm mb-4">পাঠ্যক্রম নির্দেশিকা</div>
+      <h2 class="font-headline-lg text-headline-lg text-primary mb-4">Interactive Syllabus Explorer</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto">আপনার দ্বীনি শিক্ষার ধাপসমূহ নির্ধারণ করুন। আমাদের প্রতিটি স্তর সুপরিকল্পিত পাঠ্যসূচিতে সাজানো।</p>
+    </div>
+
+    <!-- Tab Navigation -->
+    <div class="flex justify-center gap-2 sm:gap-4 mb-12 flex-wrap">
+      <button class="syllabus-tab active px-4 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm md:text-base rounded-full font-bold border-2 border-[#D4AF37] bg-[#0A332E] text-white transition-all shadow-sm duration-300" data-level="beginner" id="tab-beginner">
+        প্রাথমিক স্তর (Beginner)
+      </button>
+      <button class="syllabus-tab px-4 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm md:text-base rounded-full font-bold border-2 border-transparent bg-[#F6F4ED] text-[#0A332E] transition-all shadow-sm duration-300" data-level="intermediate" id="tab-intermediate">
+        মাধ্যমিক স্তর (Intermediate)
+      </button>
+      <button class="syllabus-tab px-4 py-2.5 sm:px-6 sm:py-3 text-xs sm:text-sm md:text-base rounded-full font-bold border-2 border-transparent bg-[#F6F4ED] text-[#0A332E] transition-all shadow-sm duration-300" data-level="advanced" id="tab-advanced">
+        উচ্চতর স্তর (Advanced)
+      </button>
+    </div>
+
+    <!-- Tab Panels -->
+    <div>
+      <!-- Beginner Panel -->
+      <div class="syllabus-panel transition-all duration-300 opacity-100 grid grid-cols-1 md:grid-cols-2 gap-8" data-level="beginner" id="level-beginner">
+        <div class="fluid-card p-5 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-2xl">menu_book</span>
+              </div>
+              <h3 class="font-headline-md text-xl text-primary font-bold">সহজ নুরানী কায়দা শিক্ষা</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">আরবী হরফ ও শুদ্ধ তিলাওয়াতের মৌলিক স্তর। শিশুদের ও বড়দের জন্য আলাদা ব্যাচে অভিজ্ঞ শিক্ষক দ্বারা পাঠদান করা হয়।</p>
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> আরবী হরফ উচ্চারণ ও সহীহ মাখরাজ</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> তাজবীদের প্রাথমিক জ্ঞান অর্জন</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> ছোট ছোট সূরা ও নামাজের মাসআলা শিক্ষা</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-outline-variant">
+            <span class="text-primary font-bold text-sm">সময়কাল: ৩ মাস (সাপ্তাহিক ৩ দিন)</span>
+            <a href="courses.html" class="text-primary font-label-md border border-primary px-5 py-2 rounded-full hover:bg-primary hover:text-white transition-colors text-sm font-semibold">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+
+        <div class="fluid-card p-5 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-2xl">import_contacts</span>
+              </div>
+              <h3 class="font-headline-md text-xl text-primary font-bold">তাজবীদুল কুরআন কোর্স</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">কুরআনের প্রতিটি হরফ উচ্চারণ ও তাজবীদের যাবতীয় নিয়মসমূহ বিস্তারিতভাবে শেখার মধ্য দিয়ে তিলাওয়াতকে সুমধুর করার কোর্স।</p>
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> ইদগাম, গুন্নাহ ও মাদ্দ-এর বিস্তারিত প্রয়োগ</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> তিলাওয়াত শোনার মাধ্যমে ভুল সংশোধন</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> নামাজের প্রয়োজনীয় গুরুত্বপূর্ণ সূরা মুখস্থকরণ</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-outline-variant">
+            <span class="text-primary font-bold text-sm">সময়কাল: ৩ মাস (সাপ্তাহিক ৩ দিন)</span>
+            <a href="courses.html" class="text-primary font-label-md border border-primary px-5 py-2 rounded-full hover:bg-primary hover:text-white transition-colors text-sm font-semibold">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intermediate Panel -->
+      <div class="syllabus-panel transition-all duration-300 opacity-0 hidden grid grid-cols-1 md:grid-cols-2 gap-8" data-level="intermediate" id="level-intermediate">
+        <div class="fluid-card p-5 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-2xl">auto_stories</span>
+              </div>
+              <h3 class="font-headline-md text-xl text-primary font-bold">সহীহ নাজেরা তিলাওয়াত</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">তাজবীদের নিয়মাবলী মেনে দেখে দেখে অনর্গল ও সাবলীলভাবে কুরআন তিলাওয়াত শিক্ষা। যারা কায়দা শেষ করেছেন তাদের জন্য অত্যন্ত উপকারী।</p>
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> সম্পূর্ণ কুরআন দেখে রিডিং শেষ করা</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> সাবলীল ও অনর্গল তিলাওয়াতের যোগ্যতা অর্জন</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> দৈনিক তিলাওয়াত ও আমলের নিয়মানুবর্তিতা</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-outline-variant">
+            <span class="text-primary font-bold text-sm">সময়কাল: ৬ মাস (সাপ্তাহিক ৩ দিন)</span>
+            <a href="courses.html" class="text-primary font-label-md border border-primary px-5 py-2 rounded-full hover:bg-primary hover:text-white transition-colors text-sm font-semibold">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+
+        <div class="fluid-card p-5 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-2xl">workspace_premium</span>
+              </div>
+              <h3 class="font-headline-md text-xl text-primary font-bold">অনলাইন হিফজ বিভাগ</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">অনুকূল পরিবেশে এবং নিবিড় তত্ত্বাবধানে ঘরে বসেই সম্পূর্ণ বা আংশিক কুরআন মুখস্থ করার বিশেষ কার্যক্রম।</p>
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> ব্যক্তিগত পাঠ পরিকল্পনা ও দৈনিক পড়া আদায়</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> ইয়াদ ও রিভিশনের মাধ্যমে হিফজ মুখস্থ রাখা</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> তাজবীদের সর্বোচ্চ প্রয়োগ ও লাহনে জলী পরিহার</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-outline-variant">
+            <span class="text-primary font-bold text-sm">সময়কাল: নমনীয় (দৈনিক ব্যাচ)</span>
+            <a href="courses.html" class="text-primary font-label-md border border-primary px-5 py-2 rounded-full hover:bg-primary hover:text-white transition-colors text-sm font-semibold">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Panel -->
+      <div class="syllabus-panel transition-all duration-300 opacity-0 hidden grid grid-cols-1 md:grid-cols-2 gap-8" data-level="advanced" id="level-advanced">
+        <div class="fluid-card p-5 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-2xl">volunteer_activism</span>
+              </div>
+              <h3 class="font-headline-md text-xl text-primary font-bold">Muslim Culture & Life Program</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">একজন মুসলিম হিসেবে দৈনন্দিন জীবন পরিচালনায় প্রয়োজনীয় সঠিক আকীদা, ফিকহ (মাসআলা-মাসায়েল), এবং আদব-আখলাক শিক্ষার এক বছর মেয়াদী সম্পূর্ণ জীবনমুখী কোর্স।</p>
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> সহীহ আকীদা ও সমকালীন জীবনদর্শন</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> ইবাদতের সঠিক নিয়ম (পবিত্রতা, নামাজ, রোজা, জাকাত ও হজ)</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> ইসলামী পারিবারিক ব্যবস্থা ও সামাজিক শিষ্টাচার</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-outline-variant">
+            <span class="text-primary font-bold text-sm">সময়কাল: ১ বছর (সাপ্তাহিক ৩ দিন)</span>
+            <a href="courses.html" class="text-primary font-label-md border border-primary px-5 py-2 rounded-full hover:bg-primary hover:text-white transition-colors text-sm font-semibold">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+
+        <div class="fluid-card p-5 md:p-8 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+                <span class="material-symbols-outlined text-2xl">translate</span>
+              </div>
+              <h3 class="font-headline-md text-xl text-primary font-bold">আরবী ভাষা ও ব্যাকরণ কোর্স</h3>
+            </div>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6">কুরআনুল কারীমের অনুবাদ সরাসরি বুঝতে পারার লক্ষে আরবী ভাষা, ব্যাকরণ (নাহু-সরফ) এবং কথোপকথন শিক্ষার উচ্চতর প্রোগ্রাম।</p>
+            <ul class="space-y-3 mb-8 text-sm text-on-surface">
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> আরবী ব্যাকরণের প্রয়োজনীয় মৌলিক সূত্রাবলী</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> কুরআনের আয়াতের ব্যাকরণিক বিশ্লেষণ ও তরজমা</li>
+              <li class="flex items-center gap-2"><span class="material-symbols-outlined text-secondary text-base">check_circle</span> আরবী ভাষায় সাধারণ কথোপকথনের দক্ষতা অর্জন</li>
+            </ul>
+          </div>
+          <div class="flex items-center justify-between pt-6 border-t border-outline-variant">
+            <span class="text-primary font-bold text-sm">সময়কাল: ৬ মাস (সাপ্তাহিক ৩ দিন)</span>
+            <a href="courses.html" class="text-primary font-label-md border border-primary px-5 py-2 rounded-full hover:bg-primary hover:text-white transition-colors text-sm font-semibold">বিস্তারিত দেখুন</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section class="py-24 bg-surface-container-lowest" id="courses">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="text-center mb-16">
+            <h2 class="font-headline-lg text-headline-lg text-primary mb-4">আমাদের কোর্সসমূহ</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">সহীহ আকিদা ও বিশুদ্ধ কুরআন শিক্ষার জন্য অভিজ্ঞ উস্তাদদের অধীনে অনলাইন কোর্সসমূহ</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Featured Course: Muslim Culture & Life Program (Spans full width on desktop) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-lg border border-primary/20 hover:border-primary transition-all group flex flex-col lg:flex-row col-span-1 md:col-span-2 lg:col-span-3">
+                <div class="lg:w-2/5 relative overflow-hidden flex items-stretch">
+                    <img alt="Muslim Culture and Life Program" class="w-full h-full min-h-[300px] object-cover group-hover:scale-105 transition-transform duration-500" src="image/muslim_culture_course.png">
+                    <div class="absolute top-6 left-6 bg-secondary text-white px-4 py-2 rounded-lg font-bold shadow-lg">বিশেষ প্রোগ্রাম</div>
+                </div>
+                <div class="p-5 md:p-8 lg:w-3/5 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-headline-lg text-2xl lg:text-3xl mb-4 text-on-surface">Muslim Culture &amp; Life Program</h3>
+                        <p class="text-secondary font-bold mb-4">এক বছরব্যাপী পূর্ণাঙ্গ দ্বীন শিক্ষার অনলাইন কোর্স</p>
+                        <p class="text-on-surface-variant mb-6 leading-relaxed">একজন সাধারণ মুসলিমকে সহীহ আকীদা, বিশুদ্ধ ইবাদত, সুন্নাহসম্মত জীবনাচার ও নৈতিক উৎকর্ষতার মাধ্যমে একটি পূর্ণাঙ্গ দ্বীনি জীবনযাপনে সক্ষম করে তোলা এই কোর্সের মূল লক্ষ্য।</p>
+                        <div class="grid grid-cols-2 gap-4 mb-8">
+                            <div class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-base">school</span> ঈমান ও আকিদা</div>
+                            <div class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-base">menu_book</span> কুরআন ও নামাজ</div>
+                            <div class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-base">favorite</span> ইসলামী কালচার</div>
+                            <div class="flex items-center gap-2 text-sm text-on-surface"><span class="material-symbols-outlined text-primary text-base">diversity_3</span> আদব-আখলাক</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+                        <div class="text-primary font-bold">ভর্তি কার্যক্রম চলমান</div>
+                        <a href="admission.html" class="bg-primary text-on-primary px-8 py-3 rounded-xl hover:opacity-90 transition-all font-bold flex items-center justify-center">বিস্তারিত ও ভর্তি</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Noorani Course Card -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant hover:shadow-md hover:border-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Noorani Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="image/noorani_course.png">
+                        <div class="absolute top-4 left-4 bg-primary text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase">নুরানী</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-md text-xl mb-3 text-on-surface">সহজ নুরানী কায়দা শিক্ষা</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">বিশুদ্ধ উচ্চারণ ও মাখরাজ সহকারে সহজে আরবী হরফ ও কুরআন তিলাওয়াত শেখার প্রাথমিক কোর্স।</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+                        <span class="text-primary font-bold">৳ ৯৯০</span>
+                        <a href="courses.html" class="text-primary font-label-md border border-primary px-4 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Najera Course Card -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant hover:shadow-md hover:border-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Najera Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="image/najera_course.png">
+                        <div class="absolute top-4 left-4 bg-secondary text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase">নাজেরা</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-md text-xl mb-3 text-on-surface">সহীহ নাজেরা তিলাওয়াত</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">কুরআনুল কারীম দেখে দেখে বিশুদ্ধভাবে ও তাজবীদ সহকারে তিলাওয়াত শেখার মধ্যম স্তরের কোর্স।</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+                        <span class="text-primary font-bold">৳ ১৪৫০</span>
+                        <a href="courses.html" class="text-primary font-label-md border border-primary px-4 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hifz Course Card -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-sm border border-outline-variant hover:shadow-md hover:border-primary transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative h-48 overflow-hidden">
+                        <img alt="Hifz Course" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="image/hifz_course.png">
+                        <div class="absolute top-4 left-4 bg-tertiary text-white text-[10px] px-3 py-1 rounded-full font-bold uppercase">হিফজ</div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-headline-md text-xl mb-3 text-on-surface">অনলাইন হিফজ বিভাগ</h3>
+                        <p class="text-on-surface-variant text-sm leading-relaxed mb-4">অভিজ্ঞ হাফেজ উস্তাদদের অধীনে তাসহীহ ও নিয়ম মেনে ঘরে বসেই হিফজ সম্পন্ন করার প্রোগ্রাম।</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex items-center justify-between pt-4 border-t border-outline-variant">
+                        <span class="text-primary font-bold">৳ ২৫০০</span>
+                        <a href="courses.html" class="text-primary font-label-md border border-primary px-4 py-1.5 rounded-lg hover:bg-primary hover:text-white transition-colors">বিস্তারিত</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- View All Courses Button -->
+        <div class="text-center pt-6">
+            <a href="courses.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-3.5 rounded-xl font-bold hover:bg-primary hover:text-white transition-all duration-300 shadow-sm hover:shadow-md">
+                সবগুলো কোর্স দেখুন
+                <span class="material-symbols-outlined text-lg">arrow_forward</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- WhatsApp CTA -->
+<section class="py-24 bg-surface-bright relative overflow-hidden">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="bg-gradient-to-br from-[#06201D] via-[#0A332E] to-[#03100E] rounded-2xl md:rounded-[2rem] border border-[#D4AF37]/20 p-6 md:p-16 shadow-2xl relative overflow-hidden islamic-pattern-bg">
+            <!-- Decorative Light Glows -->
+            <div class="absolute -top-32 -right-32 w-96 h-96 bg-primary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center relative z-10">
+                <!-- Left Column: Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-secondary-container/30 bg-secondary-container/10 text-secondary-container text-xs font-bold uppercase tracking-wider">
+                        <span class="material-symbols-outlined text-sm">auto_awesome</span>
+                        বিনামূল্যে ট্রায়াল ক্লাস
+                    </div>
+                    <h2 class="font-headline-lg text-3xl md:text-4xl text-white font-bold leading-tight font-serif">
+                        ইসলামিক শিক্ষার পথে আজই যাত্রা শুরু করুন
+                    </h2>
+                    <p class="text-white/80 text-base md:text-lg leading-relaxed max-w-xl">
+                        আমাদের অভিজ্ঞ ও যোগ্য উস্তাদদের অধীনে বিনামূল্যে ট্রায়াল ক্লাসে জয়েন করে শিক্ষার মান যাচাই করতে পারেন। ভর্তি সংক্রান্ত যেকোনো তথ্যের জন্য আমাদের সরাসরি কল করুন অথবা হোয়াটসঅ্যাপে যোগাযোগ করুন।
+                    </p>
+                </div>
+                
+                <!-- Right Column: Actions -->
+                <div class="lg:col-span-5 flex flex-col gap-5 w-full">
+                    <!-- Glassmorphic Call Card -->
+                    <div class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-2xl text-white flex flex-col gap-4 shadow-inner hover:bg-white/15 transition-all duration-300">
+                        <span class="text-xs uppercase tracking-widest text-secondary-container font-bold flex items-center gap-1.5">
+                            <span class="material-symbols-outlined text-sm">contact_phone</span>
+                            পরামর্শ ও ভর্তির জন্য কল করুন
+                        </span>
+                        <div class="flex flex-col gap-3">
+                            <a href="tel:+8801786340523" class="flex items-center gap-3 text-lg font-bold hover:text-secondary-container hover:translate-x-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-secondary-container">
+                                    <span class="material-symbols-outlined text-lg">call</span>
+                                </div>
+                                +8801786340523
+                            </a>
+                            <a href="tel:+8801815298479" class="flex items-center gap-3 text-lg font-bold hover:text-secondary-container hover:translate-x-1 transition-all duration-300">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-secondary-container">
+                                    <span class="material-symbols-outlined text-lg">call</span>
+                                </div>
+                                +8801815298479
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- WhatsApp Action Button -->
+                    <a href="https://wa.me/8801786340523" target="_blank" class="w-full bg-[#25D366] text-white px-6 py-4 md:px-8 md:py-5 rounded-xl md:rounded-2xl font-bold flex items-center justify-center gap-3 transition-all duration-300 hover:scale-[1.02] shadow-lg hover:shadow-[#25D366]/20 hover:bg-[#20ba56] premium-btn cursor-pointer">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 001.333 4.993L2 22l5.13-1.343a9.96 9.96 0 004.881 1.28h.005c5.507 0 9.99-4.478 9.99-9.986 0-2.67-1.037-5.18-2.92-7.062A9.925 9.925 0 0012.012 2zm5.799 14.146c-.319.896-1.543 1.634-2.122 1.702-.514.06-1.18.082-1.895-.145-2.916-.928-4.907-3.816-5.053-4.009-.145-.193-1.18-1.571-1.18-2.997 0-1.427.747-2.129 1.012-2.408.265-.279.578-.349.771-.349.193 0 .385.001.554.008.175.007.411-.067.644.476.241.564.82 2.002.892 2.15.072.147.12.32.024.514-.096.193-.145.313-.289.482-.145.17-.306.379-.438.508-.145.143-.297.299-.129.587.168.287.749 1.233 1.608 1.996.845.753 1.559.986 1.779 1.096.22.11.349.096.478-.051.13-.147.554-.645.702-.865.147-.22.296-.183.5-.11.205.073 1.302.613 1.527.725.225.112.373.167.428.261.055.094.055.545-.264 1.442z"/>
+                        </svg>
+                        হোয়াটসঅ্যাপে যোগাযোগ করুন
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<!-- Unified Footer -->
+<!-- Unified Footer -->
+<div id="footer-placeholder"></div>
+<!-- Enrollment FAB -->
+<div class="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-50">
+<a href="admission.html" class="bg-primary text-on-primary w-14 h-14 md:w-16 md:h-16 rounded-full shadow-2xl flex items-center justify-center animate-bounce hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl md:text-3xl" style="font-variation-settings: &quot;FILL&quot; 1;">school</span>
+</a>
+</div>
+<script src="main.js?v=3.0"></script>
+</body></html>
