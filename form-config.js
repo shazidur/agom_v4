@@ -14,5 +14,9 @@
 //   BAD → Google login page OR error page
 
 const FORM_CONFIG = {
-  scriptUrl: 'https://script.google.com/macros/s/AKfycbx50I5nmSwy5WKsTT8h7_OmE7-_E4Kb7P6w4PvuUtuMLv3o-fT8PGquWcWwnvvcIuWX/exec',
+  // Add all your deployed Google Web App URLs here to send data to multiple accounts/sheets
+  scriptUrls: [
+    'https://script.google.com/macros/s/AKfycbx50I5nmSwy5WKsTT8h7_OmE7-_E4Kb7P6w4PvuUtuMLv3o-fT8PGquWcWwnvvcIuWX/exec',
+    'https://script.google.com/macros/s/AKfycbw4QOLual6BYWB9mVD3rcKexICGmguq7UNXtsMz4xH1dYn8ctTNjAON8Dbb9XjRgWVasw/exec'
+  ],
 };
