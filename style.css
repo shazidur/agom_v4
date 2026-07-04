@@ -2,17 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Noto+Serif+Bengali:wght@500;600;700&display=swap');
 
 :root {
-  --bg-alabaster: #FAF9F5;
+  --bg-alabaster: #FCFAF6;
   --bg-cream-light: #F6F4ED;
-  --color-midnight: #0A332E;
-  --color-midnight-light: #154d46;
-  --color-slate-dark: #0A1412;
-  --color-gold-accent: #D4AF37;
-  --color-gold-light: #F3E5AB;
+  --color-midnight: #062A24;
+  --color-midnight-light: #0D9488;
+  --color-slate-dark: #0D1E1B;
+  --color-gold-accent: #C29F38;
+  --color-gold-light: #F7F2E2;
   --radius-fluid: 24px;
   --radius-lg: 16px;
-  --shadow-soft: 0 20px 40px rgba(10, 51, 46, 0.03);
-  --shadow-medium: 0 30px 60px rgba(10, 51, 46, 0.06);
+  --shadow-soft: 0 12px 30px rgba(6, 42, 36, 0.04);
+  --shadow-medium: 0 20px 45px rgba(6, 42, 36, 0.08);
 }
 
 /* Custom Scrollbar */
@@ -43,18 +43,17 @@ h1, h2, h3, h4, .font-serif {
   font-family: 'Playfair Display', 'Noto Serif Bengali', serif;
 }
 
-/* Fluid Canvas Card Layout */
 .fluid-card {
   background: #ffffff;
   border-radius: var(--radius-fluid);
   box-shadow: var(--shadow-soft);
-  border: 1px solid rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(194, 159, 56, 0.12);
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .fluid-card:hover {
-  transform: translateY(-6px) scale(1.02);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-medium);
-  border-color: rgba(212, 175, 55, 0.3); /* Gold accent glow */
+  border-color: rgba(194, 159, 56, 0.35); /* Premium gold accent glow */
 }
 
 /* Islamic Pattern Overlays */
@@ -85,105 +84,78 @@ h1, h2, h3, h4, .font-serif {
 
 /* Floating Glassmorphic Header & Logo/Name Sizing (Responsive & Balanced) */
 .glass-header #header-container {
-  height: 8.5rem !important; /* Mobile default: 136px */
+  height: 5rem !important; /* Mobile default: 80px */
 }
 .glass-header #header-logo {
-  height: 6rem !important; /* Mobile default: 96px */
+  height: 3.5rem !important; /* Mobile default: 56px */
 }
 .glass-header #header-name {
-  height: 4rem !important; /* Mobile default: 64px */
+  height: 2rem !important; /* Mobile default: 32px */
 }
 .glass-header.scrolled #header-container {
-  height: 6rem !important; /* Mobile scrolled: 96px */
+  height: 4rem !important; /* Mobile scrolled: 64px */
 }
 .glass-header.scrolled #header-logo {
-  height: 4.5rem !important; /* Mobile scrolled: 72px */
+  height: 2.8rem !important; /* Mobile scrolled: 44px */
 }
 .glass-header.scrolled #header-name {
-  height: 3rem !important; /* Mobile scrolled: 48px */
+  height: 1.6rem !important; /* Mobile scrolled: 25px */
 }
 main {
-  padding-top: 10rem !important; /* Mobile main padding: 160px */
+  padding-top: 6rem !important; /* Mobile main padding */
 }
 
 /* Tablet Layout (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .glass-header #header-container {
-    height: 8.5rem !important; /* Tablet default: 136px */
+    height: 5.5rem !important; /* Tablet default */
   }
   .glass-header #header-logo {
-    height: 6.5rem !important; /* Tablet default: 104px */
+    height: 3.8rem !important; /* Tablet default */
   }
   .glass-header #header-name {
-    height: 4.5rem !important; /* Tablet default: 72px */
+    height: 2.2rem !important; /* Tablet default */
   }
   
   .glass-header.scrolled #header-container {
-    height: 6.5rem !important; /* Tablet scrolled: 104px */
+    height: 4.5rem !important; /* Tablet scrolled */
   }
   .glass-header.scrolled #header-logo {
-    height: 5rem !important; /* Tablet scrolled: 80px */
+    height: 3rem !important; /* Tablet scrolled */
   }
   .glass-header.scrolled #header-name {
-    height: 3.5rem !important; /* Tablet scrolled: 56px */
+    height: 1.8rem !important; /* Tablet scrolled */
   }
   
   main {
-    padding-top: 10.5rem !important; /* Tablet main padding: 168px */
+    padding-top: 6.5rem !important; /* Tablet main padding */
   }
 }
 
-/* Laptop Layout (1024px to 1279px) */
+/* Laptop/Desktop Layout (1024px and up) */
 @media (min-width: 1024px) {
   .glass-header #header-container {
-    height: 11rem !important; /* Laptop default: 176px */
+    height: 6rem !important; /* Laptop default: 96px */
   }
   .glass-header #header-logo {
-    height: 8.5rem !important; /* Laptop default: 136px */
+    height: 4.2rem !important; /* Laptop default */
   }
   .glass-header #header-name {
-    height: 6.5rem !important; /* Laptop default: 104px */
+    height: 2.5rem !important; /* Laptop default */
   }
   
   .glass-header.scrolled #header-container {
-    height: 8rem !important; /* Laptop scrolled: 128px */
+    height: 4.5rem !important; /* Laptop scrolled: 72px */
   }
   .glass-header.scrolled #header-logo {
-    height: 6.5rem !important; /* Laptop scrolled: 104px */
+    height: 3.2rem !important; /* Laptop scrolled */
   }
   .glass-header.scrolled #header-name {
-    height: 5rem !important; /* Laptop scrolled: 80px */
+    height: 2rem !important; /* Laptop scrolled */
   }
   
   main {
-    padding-top: 13rem !important; /* Laptop main padding: 208px */
-  }
-}
-
-/* Large Desktop Layout (1280px and up) */
-@media (min-width: 1280px) {
-  .glass-header #header-container {
-    height: 14rem !important; /* Desktop default: 224px */
-  }
-  .glass-header #header-logo {
-    height: 10rem !important; /* Desktop default: 160px */
-  }
-  .glass-header #header-name {
-    height: 7.5rem !important; /* Desktop default: 120px */
-  }
-  
-  .glass-header.scrolled #header-container {
-    height: 10rem !important; /* Desktop scrolled: 160px */
-  }
-  .glass-header.scrolled #header-logo {
-    height: 7.5rem !important; /* Desktop scrolled: 120px */
-  }
-  .glass-header.scrolled #header-name {
-    height: 6rem !important; /* Desktop scrolled: 96px */
-  }
-  
-  main {
-    padding-top: 16rem !important; /* Desktop main padding: 256px */
+    padding-top: 7rem !important; /* Laptop/Desktop main padding */
   }
 }
 
@@ -341,3 +313,107 @@ main {
     padding-right: 1rem !important;
   }
 }
+
+/* Custom Redesign Animations & Micro-interactions */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.hover-lift {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.hover-lift:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(10, 51, 46, 0.08);
+}
+
+.icon-bounce {
+  transition: transform 0.3s ease;
+}
+.hover-lift:hover .icon-bounce {
+  transform: scale(1.1);
+  animation: iconBounce 0.6s ease-in-out;
+}
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.2; }
+  50% { transform: scale(1.15) translate(15px, -20px); opacity: 0.35; }
+}
+.animate-pulse-glow {
+  animation: pulseGlow 12s ease-in-out infinite;
+}
+
+/* Premium Revamp Additions */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(194, 159, 56, 0.15);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--color-midnight) 30%, var(--color-gold-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.badge-premium-gold {
+  background-color: rgba(194, 159, 56, 0.1);
+  color: var(--color-gold-accent);
+  border: 1px solid rgba(194, 159, 56, 0.2);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.badge-premium-teal {
+  background-color: rgba(13, 148, 136, 0.1);
+  color: var(--color-midnight-light);
+  border: 1px solid rgba(13, 148, 136, 0.2);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.input-premium {
+  border: 1px solid rgba(6, 42, 36, 0.15);
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+.input-premium:focus {
+  outline: none;
+  border-color: var(--color-midnight-light);
+  box-shadow: 0 0 0 4px rgba(13, 148, 136, 0.12);
+  background-color: #ffffff;
+}
+
+.premium-btn-filled {
+  background-color: var(--color-midnight);
+  color: #ffffff;
+  border: 1px solid var(--color-midnight);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.premium-btn-filled:hover {
+  background-color: var(--color-midnight-light);
+  border-color: var(--color-midnight-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(13, 148, 136, 0.15);
+}
+
+.premium-btn-outline {
+  background-color: transparent;
+  color: var(--color-midnight);
+  border: 2px solid var(--color-midnight);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.premium-btn-outline:hover {
+  background-color: rgba(6, 42, 36, 0.04);
+  transform: translateY(-2px);
+}
+

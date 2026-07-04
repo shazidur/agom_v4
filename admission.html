@@ -14,24 +14,24 @@
             theme: {
                 extend: {
                     "colors": {
-                        "primary": "#0A332E",
-                        "primary-container": "#E6ECEB",
-                        "secondary": "#D4AF37",
-                        "secondary-container": "#FFF5D1",
-                        "background": "#FAF9F5",
-                        "surface": "#FAF9F5",
+                        "primary": "#062A24",
+                        "primary-container": "#E0ECE9",
+                        "secondary": "#C29F38",
+                        "secondary-container": "#F7F2E2",
+                        "background": "#FCFAF6",
+                        "surface": "#FCFAF6",
                         "surface-container-lowest": "#ffffff",
                         "surface-container-low": "#F6F4ED",
                         "surface-container": "#EFECE3",
                         "surface-container-high": "#E7E3D8",
                         "surface-container-highest": "#DFD9CB",
-                        "on-surface": "#0A332E",
+                        "on-surface": "#0D1E1B",
                         "on-surface-variant": "#415754",
                         "outline": "#839A96",
                         "outline-variant": "#CFDAD7",
                         "on-primary": "#ffffff",
                         "on-secondary": "#ffffff",
-                        "on-background": "#0A332E"
+                        "on-background": "#0D1E1B"
                     },
                     "borderRadius": {
                         "DEFAULT": "0.25rem",
@@ -108,28 +108,28 @@
 <!-- Student Name -->
 <div class="flex flex-col gap-2">
 <label class="text-label-md font-label-md text-on-surface-variant" for="studentName">ছাত্রের নাম (Student Name)</label>
-<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="studentName" name="studentName" placeholder="পুরো নাম লিখুন" required="" type="text">
+<input class="input-premium rounded-lg px-4 py-3 transition-all text-body-md w-full" id="studentName" name="studentName" placeholder="পুরো নাম লিখুন" required="" type="text">
 </div>
 <!-- Father's Name -->
 <div class="flex flex-col gap-2">
 <label class="text-label-md font-label-md text-on-surface-variant" for="fatherName">পিতার নাম (Father's Name)</label>
-<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="fatherName" name="fatherName" placeholder="পিতার নাম লিখুন" required="" type="text">
+<input class="input-premium rounded-lg px-4 py-3 transition-all text-body-md w-full" id="fatherName" name="fatherName" placeholder="পিতার নাম লিখুন" required="" type="text">
 </div>
 <!-- Age -->
 <div class="flex flex-col gap-2">
 <label class="text-label-md font-label-md text-on-surface-variant" for="age">বয়স (Age)</label>
-<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="age" name="age" placeholder="বয়স" required="" type="number">
+<input class="input-premium rounded-lg px-4 py-3 transition-all text-body-md w-full" id="age" name="age" placeholder="বয়স" required="" type="number">
 </div>
 <!-- Contact Number -->
 <div class="flex flex-col gap-2">
 <label class="text-label-md font-label-md text-on-surface-variant" for="phone">মোবাইল নাম্বার (Contact Number)</label>
-<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md ring-1 ring-outline/20" id="phone" name="phone" placeholder="০১৭XXXXXXXX" required="" type="tel">
+<input class="input-premium rounded-lg px-4 py-3 transition-all text-body-md w-full" id="phone" name="phone" placeholder="০১৭XXXXXXXX" required="" type="tel">
 </div>
 </div>
 <!-- Email -->
 <div class="flex flex-col gap-2">
 <label class="text-label-md font-label-md text-on-surface-variant" for="email">ইমেইল (Email)</label>
-<input class="bg-surface-container-lowest border border-outline rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary/10 focus:border-primary transition-all text-body-md w-full ring-1 ring-outline/20" id="email" name="email" placeholder="example@mail.com" type="email">
+<input class="input-premium rounded-lg px-4 py-3 transition-all text-body-md w-full" id="email" name="email" placeholder="example@mail.com" type="email">
 </div>
 <!-- Course Selection -->
 <div class="flex flex-col gap-2">
@@ -179,7 +179,7 @@
 </div>
 <!-- Submit Button -->
 <div class="pt-4">
-<button class="w-full md:w-auto px-12 py-4 bg-secondary-container text-on-secondary-container rounded-lg font-headline-md hover:shadow-lg transition-all flex items-center justify-center gap-3" type="submit">
+<button class="w-full md:w-auto px-12 py-4 premium-btn-filled rounded-full font-headline-md shadow-md flex items-center justify-center gap-3" type="submit">
 <span class="">ফরম জমা দিন</span>
 <span class="material-symbols-outlined" data-icon="send">send</span>
 </button>

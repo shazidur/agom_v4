@@ -7,9 +7,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   // 2. Scroll Reveal Animations with Intersection Observer
   setupScrollReveal();
 
-  // 3. Setup Interactive Syllabus Explorer tabs
-  setupSyllabusTabs();
-
   // 5. Setup Animated Statistics Counter if element exists
   setupStatsCounters();
 
@@ -97,7 +94,7 @@ function setupMobileNavigation() {
         <a class="nav-mobile-link text-on-surface-variant hover:text-primary transition-colors py-2 border-b border-outline-variant/30" href="faq.html">প্রশ্নোত্তর</a>
       </nav>
       <div class="mt-auto flex flex-col gap-4">
-        <a href="admission.html" class="bg-[#F59E0B] text-white px-6 py-3 rounded-lg font-bold hover:opacity-90 transition-all shadow-md active:scale-95 text-center block">ভর্তি হোন</a>
+        <a href="admission.html" class="bg-[#062A24] hover:bg-[#0D9488] text-white px-6 py-3 rounded-lg font-bold transition-all shadow-md active:scale-95 text-center block">ভর্তি হোন</a>
       </div>
     `;
     document.body.appendChild(drawer);
@@ -165,43 +162,6 @@ function setupStickyHeader() {
   handleScroll(); // Run once on load
 }
 
-// Interactive Syllabus Explorer tab switching
-function setupSyllabusTabs() {
-  const tabs = document.querySelectorAll('.syllabus-tab');
-  const panels = document.querySelectorAll('.syllabus-panel');
-  if (tabs.length === 0) return;
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const targetLevel = tab.getAttribute('data-level');
-
-      // Update tab active classes
-      tabs.forEach(t => {
-        t.classList.remove('active', 'bg-[#0A332E]', 'text-white', 'border-[#D4AF37]');
-        t.classList.add('bg-[#F6F4ED]', 'text-[#0A332E]', 'border-transparent');
-      });
-      tab.classList.add('active', 'bg-[#0A332E]', 'text-white', 'border-[#D4AF37]');
-      tab.classList.remove('bg-[#F6F4ED]', 'text-[#0A332E]', 'border-transparent');
-
-      // Fade out current panel and fade in target panel
-      panels.forEach(panel => {
-        if (panel.getAttribute('data-level') === targetLevel) {
-          panel.classList.remove('hidden');
-          setTimeout(() => {
-            panel.classList.remove('opacity-0');
-            panel.classList.add('opacity-100');
-          }, 50);
-        } else {
-          panel.classList.add('opacity-0');
-          panel.classList.remove('opacity-100');
-          setTimeout(() => {
-            panel.classList.add('hidden');
-          }, 300);
-        }
-      });
-    });
-  });
-}
 
 // Highlight the navigation links pointing to current page
 function highlightActiveLinks() {
@@ -212,10 +172,10 @@ function highlightActiveLinks() {
   links.forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPath) {
-      link.classList.add('active-link', 'text-[#0A332E]');
+      link.classList.add('active-link', 'text-[#062A24]');
       link.classList.remove('text-stone-600');
     } else {
-      link.classList.remove('active-link', 'text-[#0A332E]');
+      link.classList.remove('active-link', 'text-[#062A24]');
       link.classList.add('text-stone-600');
     }
   });
@@ -225,10 +185,10 @@ function highlightActiveLinks() {
   mobileLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (href === currentPath) {
-      link.classList.add('text-[#0A332E]', 'font-bold');
+      link.classList.add('text-[#062A24]', 'font-bold');
       link.classList.remove('text-stone-600');
     } else {
-      link.classList.remove('text-[#0A332E]', 'font-bold');
+      link.classList.remove('text-[#062A24]', 'font-bold');
       link.classList.add('text-stone-600');
     }
   });
@@ -270,12 +230,26 @@ function setupStatsCounters() {
   statsElements.forEach(el => observer.observe(el));
 }
 
+// Helper to get active script URLs (supports both old single url and new array formats)
+function getActiveScriptUrls() {
+  const urls = [];
+  if (typeof FORM_CONFIG !== 'undefined') {
+    if (FORM_CONFIG.scriptUrls && Array.isArray(FORM_CONFIG.scriptUrls)) {
+      urls.push(...FORM_CONFIG.scriptUrls);
+    }
+    if (FORM_CONFIG.scriptUrl) {
+      urls.push(FORM_CONFIG.scriptUrl);
+    }
+  }
+  return urls.filter(url => url && !url.includes('YOUR_GOOGLE_APPS_SCRIPT'));
+}
+
 // Submit forms to Google Sheets via Apps Script
 function setupFormSubmissions() {
   const admissionForm = document.getElementById('admissionForm');
   const contactForm = document.getElementById('contactForm');
 
-  if (typeof FORM_CONFIG !== 'undefined' && FORM_CONFIG.scriptUrl && !FORM_CONFIG.scriptUrl.includes('YOUR_GOOGLE_APPS_SCRIPT')) {
+  if (getActiveScriptUrls().length > 0) {
     checkFormHandlerReady();
   }
 
@@ -289,26 +263,30 @@ function setupFormSubmissions() {
 }
 
 function checkFormHandlerReady() {
-  jsonpRequest(FORM_CONFIG.scriptUrl, { ping: '1' })
-    .then((result) => {
-      if (result.status !== 'ready') {
-        console.warn('Unexpected handler response:', result);
-      }
-    })
-    .catch(() => {
-      const msg = 'Google Script setup incomplete. Open your script URL in incognito — it must show "AGOM form handler is ready." See form-config.js for steps.';
-      const admissionStatus = document.getElementById('admissionStatus');
-      const contactStatus = document.getElementById('contactStatus');
-      if (admissionStatus && !admissionStatus.textContent) showFormStatus('admissionStatus', msg, 'error');
-      if (contactStatus && !contactStatus.textContent) showFormStatus('contactStatus', msg, 'error');
-    });
+  const activeUrls = getActiveScriptUrls();
+  activeUrls.forEach(url => {
+    jsonpRequest(url, { ping: '1' })
+      .then((result) => {
+        if (result.status !== 'ready') {
+          console.warn('Unexpected handler response from ' + url + ':', result);
+        }
+      })
+      .catch(() => {
+        const msg = 'Google Script setup incomplete. Open your script URL in incognito — it must show "AGOM form handler is ready." See form-config.js for steps.';
+        const admissionStatus = document.getElementById('admissionStatus');
+        const contactStatus = document.getElementById('contactStatus');
+        if (admissionStatus && !admissionStatus.textContent) showFormStatus('admissionStatus', msg, 'error');
+        if (contactStatus && !contactStatus.textContent) showFormStatus('contactStatus', msg, 'error');
+      });
+  });
 }
 
 function bindFormSubmit(form, collectData, statusId) {
   form.addEventListener('submit', async (event) => {
     event.preventDefault();
 
-    if (typeof FORM_CONFIG === 'undefined' || !FORM_CONFIG.scriptUrl || FORM_CONFIG.scriptUrl.includes('YOUR_GOOGLE_APPS_SCRIPT')) {
+    const activeUrls = getActiveScriptUrls();
+    if (activeUrls.length === 0) {
       showFormStatus(statusId, 'Form is not configured yet. Add your Google Apps Script URL in form-config.js.', 'error');
       return;
     }
@@ -324,11 +302,19 @@ function bindFormSubmit(form, collectData, statusId) {
 
     try {
       const payload = collectData(form);
-      const result = await jsonpRequest(FORM_CONFIG.scriptUrl, payload);
-
-      if (!result.success) {
-        throw new Error(result.error || 'Submission failed');
-      }
+      
+      // Submit to all configured URLs in parallel
+      const requests = activeUrls.map(url => 
+        jsonpRequest(url, payload)
+          .then(result => {
+            if (!result.success) {
+              throw new Error(result.error || 'Submission failed');
+            }
+            return result;
+          })
+      );
+      
+      await Promise.all(requests);
 
       form.reset();
       showFormStatus(statusId, 'আপনার তথ্য সফলভাবে জমা হয়েছে। শীঘ্রই আমরা যোগাযোগ করব, ইনশাআল্লাহ।', 'success');
