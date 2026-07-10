@@ -20,13 +20,16 @@
   width: 6px;
   height: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-cream-light);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--color-midnight-light);
   border-radius: 10px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-gold-accent);
 }
@@ -39,7 +42,11 @@ body {
   color: var(--color-midnight);
 }
 
-h1, h2, h3, h4, .font-serif {
+h1,
+h2,
+h3,
+h4,
+.font-serif {
   font-family: 'Playfair Display', 'Noto Serif Bengali', serif;
 }
 
@@ -50,16 +57,19 @@ h1, h2, h3, h4, .font-serif {
   border: 1px solid rgba(194, 159, 56, 0.12);
   transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .fluid-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-medium);
-  border-color: rgba(194, 159, 56, 0.35); /* Premium gold accent glow */
+  border-color: rgba(194, 159, 56, 0.35);
+  /* Premium gold accent glow */
 }
 
 /* Islamic Pattern Overlays */
 .islamic-pattern-bg {
   position: relative;
 }
+
 .islamic-pattern-bg::before {
   content: "";
   position: absolute;
@@ -78,84 +88,153 @@ h1, h2, h3, h4, .font-serif {
   border-bottom: 1px solid rgba(212, 175, 55, 0.15);
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .glass-header.scrolled {
   box-shadow: 0 10px 30px rgba(10, 51, 46, 0.04);
 }
 
 /* Floating Glassmorphic Header & Logo/Name Sizing (Responsive & Balanced) */
+/* Narrow Mobile Layout (up to 479px) */
 .glass-header #header-container {
-  height: 5rem !important; /* Mobile default: 80px */
+  height: 4.5rem !important;
+  /* Mobile default height */
 }
+
 .glass-header #header-logo {
-  height: 3.5rem !important; /* Mobile default: 56px */
+  height: 3.2rem !important;
+  /* Scaled down to prevent overlap */
 }
+
 .glass-header #header-name {
-  height: 2rem !important; /* Mobile default: 32px */
+  height: 4rem !important;
+  /* Scaled down to prevent overlap */
 }
+
 .glass-header.scrolled #header-container {
-  height: 4rem !important; /* Mobile scrolled: 64px */
+  height: 3.8rem !important;
 }
+
 .glass-header.scrolled #header-logo {
-  height: 2.8rem !important; /* Mobile scrolled: 44px */
+  height: 2.8rem !important;
 }
+
 .glass-header.scrolled #header-name {
-  height: 1.6rem !important; /* Mobile scrolled: 25px */
+  height: 1.8rem !important;
 }
+
 main {
-  padding-top: 6rem !important; /* Mobile main padding */
+  padding-top: 5.5rem !important;
+  /* Matching padding for narrow mobile */
+}
+
+/* Larger Mobile Layout (480px to 767px) */
+@media (min-width: 480px) and (max-width: 767px) {
+  .glass-header #header-container {
+    height: 5.5rem !important;
+  }
+
+  .glass-header #header-logo {
+    height: 4rem !important;
+    /* Reduced to 4rem */
+  }
+
+  .glass-header #header-name {
+    height: 4rem !important;
+    /* Kept at 4rem */
+  }
+
+  .glass-header.scrolled #header-container {
+    height: 4.5rem !important;
+  }
+
+  .glass-header.scrolled #header-logo {
+    height: 4rem !important;
+    /* Reduced to 4rem */
+  }
+
+  .glass-header.scrolled #header-name {
+    height: 4rem !important;
+    /* Updated to 4rem */
+  }
+
+  main {
+    padding-top: 6.5rem !important;
+  }
 }
 
 /* Tablet Layout (768px to 1023px) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .glass-header #header-container {
-    height: 5.5rem !important; /* Tablet default */
+    height: 5.5rem !important;
+    /* Tablet default */
   }
+
   .glass-header #header-logo {
-    height: 3.8rem !important; /* Tablet default */
+    height: 5rem !important;
+    /* Tablet default (increased from 3.8rem) */
   }
+
   .glass-header #header-name {
-    height: 2.2rem !important; /* Tablet default */
+    height: 5rem !important;
+    /* Tablet default (increased to 5rem) */
   }
-  
+
   .glass-header.scrolled #header-container {
-    height: 4.5rem !important; /* Tablet scrolled */
+    height: 4.5rem !important;
+    /* Tablet scrolled */
   }
+
   .glass-header.scrolled #header-logo {
-    height: 3rem !important; /* Tablet scrolled */
+    height: 6rem !important;
+    /* Tablet scrolled (increased from 3rem) */
   }
+
   .glass-header.scrolled #header-name {
-    height: 1.8rem !important; /* Tablet scrolled */
+    height: 5rem !important;
+    /* Tablet scrolled (increased to 5rem) */
   }
-  
+
   main {
-    padding-top: 6.5rem !important; /* Tablet main padding */
+    padding-top: 6.5rem !important;
+    /* Tablet main padding */
   }
 }
 
 /* Laptop/Desktop Layout (1024px and up) */
 @media (min-width: 1024px) {
   .glass-header #header-container {
-    height: 6rem !important; /* Laptop default: 96px */
+    height: 6rem !important;
+    /* Laptop default: 96px */
   }
+
   .glass-header #header-logo {
-    height: 4.2rem !important; /* Laptop default */
+    height: 5.5rem !important;
+    /* Laptop default (increased from 4.2rem) */
   }
+
   .glass-header #header-name {
-    height: 2.5rem !important; /* Laptop default */
+    height: 6rem !important;
+    /* Laptop default (increased to 6rem) */
   }
-  
+
   .glass-header.scrolled #header-container {
-    height: 4.5rem !important; /* Laptop scrolled: 72px */
+    height: 4.5rem !important;
+    /* Laptop scrolled: 72px */
   }
+
   .glass-header.scrolled #header-logo {
-    height: 3.2rem !important; /* Laptop scrolled */
+    height: 4rem !important;
+    /* Laptop scrolled (increased from 3.2rem) */
   }
+
   .glass-header.scrolled #header-name {
-    height: 2rem !important; /* Laptop scrolled */
+    height: 6rem !important;
+    /* Laptop scrolled (increased to 6rem) */
   }
-  
+
   main {
-    padding-top: 7rem !important; /* Laptop/Desktop main padding */
+    padding-top: 7rem !important;
+    /* Laptop/Desktop main padding */
   }
 }
 
@@ -165,6 +244,7 @@ main {
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .premium-btn::after {
   content: '';
   position: absolute;
@@ -177,6 +257,7 @@ main {
   transform: translate(-50%, -50%) scale(0);
   transition: transform 0.6s ease;
 }
+
 .premium-btn:hover::after {
   transform: translate(-50%, -50%) scale(1);
 }
@@ -191,6 +272,7 @@ main {
   position: relative;
   transition: color 0.3s ease;
 }
+
 .nav-link::after {
   content: '';
   position: absolute;
@@ -201,6 +283,7 @@ main {
   background-color: var(--color-gold-accent);
   transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .nav-link:hover::after,
 .nav-link.active-link::after {
   width: 100%;
@@ -212,22 +295,40 @@ main {
   transform: translateY(40px);
   transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
 }
 
 /* Staggered delay helpers */
-.delay-100 { transition-delay: 100ms; }
-.delay-200 { transition-delay: 200ms; }
-.delay-300 { transition-delay: 300ms; }
-.delay-400 { transition-delay: 400ms; }
+.delay-100 {
+  transition-delay: 100ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
+}
+
+.delay-300 {
+  transition-delay: 300ms;
+}
+
+.delay-400 {
+  transition-delay: 400ms;
+}
 
 /* Liquid Progress Bar SVG Animation */
 @keyframes fillProgress {
-  from { stroke-dashoffset: 283; }
-  to { stroke-dashoffset: 0; }
+  from {
+    stroke-dashoffset: 283;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+  }
 }
+
 .liquid-progress {
   stroke-dasharray: 283;
   stroke-dashoffset: 283;
@@ -238,9 +339,15 @@ main {
 
 /* Background mandala spinning */
 @keyframes slowSpin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
+
 .spin-mandala {
   animation: slowSpin 60s linear infinite;
   transform-origin: center;
@@ -252,12 +359,15 @@ main {
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), padding 0.4s ease;
 }
+
 .accordion-item.active .accordion-content {
   padding-bottom: 1.5rem;
 }
+
 .accordion-icon {
   transition: transform 0.3s ease;
 }
+
 .accordion-item.active .accordion-icon {
   transform: rotate(180deg);
 }
@@ -308,6 +418,7 @@ main {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
   }
+
   .accordion-content {
     padding-left: 1rem !important;
     padding-right: 1rem !important;
@@ -316,9 +427,17 @@ main {
 
 /* Custom Redesign Animations & Micro-interactions */
 @keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
 }
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -326,6 +445,7 @@ main {
 .hover-lift {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .hover-lift:hover {
   transform: translateY(-6px) scale(1.01);
   box-shadow: 0 20px 40px rgba(10, 51, 46, 0.08);
@@ -334,19 +454,38 @@ main {
 .icon-bounce {
   transition: transform 0.3s ease;
 }
+
 .hover-lift:hover .icon-bounce {
   transform: scale(1.1);
   animation: iconBounce 0.6s ease-in-out;
 }
+
 @keyframes iconBounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes pulseGlow {
-  0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.2; }
-  50% { transform: scale(1.15) translate(15px, -20px); opacity: 0.35; }
+
+  0%,
+  100% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: scale(1.15) translate(15px, -20px);
+    opacity: 0.35;
+  }
 }
+
 .animate-pulse-glow {
   animation: pulseGlow 12s ease-in-out infinite;
 }
@@ -386,6 +525,7 @@ main {
   background-color: #ffffff;
   transition: all 0.3s ease;
 }
+
 .input-premium:focus {
   outline: none;
   border-color: var(--color-midnight-light);
@@ -399,6 +539,7 @@ main {
   border: 1px solid var(--color-midnight);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .premium-btn-filled:hover {
   background-color: var(--color-midnight-light);
   border-color: var(--color-midnight-light);
@@ -412,8 +553,8 @@ main {
   border: 2px solid var(--color-midnight);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
+
 .premium-btn-outline:hover {
   background-color: rgba(6, 42, 36, 0.04);
   transform: translateY(-2px);
 }
-
