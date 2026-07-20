@@ -186,6 +186,81 @@
 <p class="form-status mt-4" id="admissionStatus" role="status"></p>
 </div>
 </form>
+
+<!-- Payment Information Section -->
+<div class="mt-10 pt-10 border-t border-outline-variant/60">
+    <h3 class="text-xl font-headline-md text-primary mb-6 flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
+        পেমেন্টের মাধ্যম
+    </h3>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Mobile Banking Box -->
+        <div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/50 flex flex-col justify-between hover:border-secondary/35 transition-all duration-300">
+            <div>
+                <h4 class="font-headline-md text-base text-primary mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-lg" data-icon="smartphone">smartphone</span>
+                    মোবাইল ব্যাংকিং (Send Money)
+                </h4>
+                <div class="space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-outline-variant/30 pb-3">
+                        <span class="font-bold text-on-surface flex items-center gap-1.5 whitespace-nowrap">
+                            📱 বিকাশ / নগদ
+                        </span>
+                        <div class="flex items-center gap-2">
+                            <span class="font-mono font-bold select-all bg-white px-3 py-1 rounded border border-outline-variant text-[#062A24] whitespace-nowrap">01888-754838</span>
+                            <button type="button" onclick="copyText('01888-754838', this)" class="p-1.5 hover:bg-primary-container rounded transition-colors text-primary flex-shrink-0" title="Copy Number">
+                                <span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+                        <span class="font-bold text-on-surface flex items-center gap-1.5 whitespace-nowrap">
+                            ⚡ সেলফিন
+                        </span>
+                        <div class="flex items-center gap-2">
+                            <span class="font-mono font-bold select-all bg-white px-3 py-1 rounded border border-outline-variant text-[#062A24] whitespace-nowrap">01888-754838</span>
+                            <button type="button" onclick="copyText('01888-754838', this)" class="p-1.5 hover:bg-primary-container rounded transition-colors text-primary flex-shrink-0" title="Copy Number">
+                                <span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bank Account Box -->
+        <div class="p-6 rounded-xl bg-surface-container-low border border-outline-variant/50 flex flex-col justify-between hover:border-secondary/35 transition-all duration-300">
+            <div>
+                <h4 class="font-headline-md text-base text-primary mb-4 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary text-lg" data-icon="account_balance">account_balance</span>
+                    ব্যাংক অ্যাকাউন্ট
+                </h4>
+                <div class="space-y-3 text-body-md text-on-surface-variant">
+                    <div class="flex flex-col gap-0.5">
+                        <span class="font-bold text-on-surface flex items-center gap-1.5 text-[#062A24]">
+                            🏦 ইসলামী ব্যাংক বাংলাদেশ PLC
+                        </span>
+                        <span class="text-sm pl-7 text-on-surface-variant/90">শাখা: ফরিদপুর</span>
+                    </div>
+                    <div class="flex flex-col gap-1 border-t border-outline-variant/30 pt-3 pl-7">
+                        <span class="text-xs text-on-surface font-semibold uppercase tracking-wider">অ্যাকাউন্ট নম্বর:</span>
+                        <div class="flex items-center gap-2">
+                            <span class="font-mono font-bold select-all bg-white px-3 py-1 rounded border border-outline-variant text-[#062A24] text-sm whitespace-nowrap">20501480206397007</span>
+                            <button type="button" onclick="copyText('20501480206397007', this)" class="p-1.5 hover:bg-primary-container rounded transition-colors text-primary flex-shrink-0" title="Copy Account Number">
+                                <span class="material-symbols-outlined text-sm" data-icon="content_copy">content_copy</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-0.5 pl-7">
+                        <span class="text-xs text-on-surface font-semibold uppercase tracking-wider">অ্যাকাউন্ট নাম:</span>
+                        <span class="font-bold text-on-surface text-sm">MD EMDADULLAH SHEIKH</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <!-- Sidebar / Instructions -->
 <aside class="lg:col-span-4 space-y-gutter">
@@ -245,5 +320,18 @@
 <div id="footer-placeholder"></div>
 <script src="form-config.js"></script>
 <script src="main.js?v=3.0"></script>
+<script>
+function copyText(text, button) {
+  navigator.clipboard.writeText(text).then(() => {
+    const originalHTML = button.innerHTML;
+    button.innerHTML = '<span class="material-symbols-outlined text-sm text-[#0D9488]" data-icon="check">check</span>';
+    setTimeout(() => {
+      button.innerHTML = originalHTML;
+    }, 2000);
+  }).catch(err => {
+    console.error('Could not copy text: ', err);
+  });
+}
+</script>
 </body></html>
 
